@@ -1,0 +1,18 @@
+# Generated pipeline outputs (regenerate via Sample_Download.py)
+data*/
+samples/
+samples_*/
+
+# Manually-sourced raw station data (BSRN-licensed - not ours to redistribute)
+raw_*/
+
+# Python
+__pycache__/
+*.pyc
+
+# OS
+.DS_Store
+
+# IDE / local tooling
+.idea/
+.claude/

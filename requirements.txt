@@ -1,0 +1,22 @@
+# Core data handling
+numpy
+pandas
+xarray
+scipy
+
+# Data source clients
+ecmwf-opendata      # AIFS forecast download (Sample_Download.py "aifs" step)
+cdsapi              # ERA5 reanalysis download (Sample_Download.py "era5" step) - also needs a configured ~/.cdsapirc
+eumdac               # EUMETSAT MSG cloud mask download (Sample_Download.py "msg" step)
+
+# GRIB file reading
+cfgrib              # xarray backend used to open AIFS .grib files - requires the eccodes C library
+pygrib              # used directly for MSG .grib files - also requires eccodes; install via conda-forge if pip fails:
+                     #   conda install -c conda-forge pygrib
+
+# Model / training
+torch               # see https://pytorch.org/get-started/locally/ for the right install command for your machine (CPU vs CUDA)
+pysolar             # solar altitude calculation used as a model input feature
+
+# Evaluation / plotting
+matplotlib
